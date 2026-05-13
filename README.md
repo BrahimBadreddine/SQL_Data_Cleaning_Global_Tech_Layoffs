@@ -1,4 +1,4 @@
-# Global Tech Layoffs Cleaning Project
+# Global Tech Layoffs Data Cleaning Project
 
 🌐 Language / Langue  
 - English  
