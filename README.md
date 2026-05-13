@@ -1,3 +1,14 @@
+# SQL Data Cleaning Project
+
+🌐 Language / Langue  
+- English  
+- Français  
+
+---
+
+<details>
+<summary>🇬🇧 English Version</summary>
+
 # 🏢 Layoffs ETL Pipeline (SQL Server)
 
 ## 📌 Project Overview
@@ -157,3 +168,167 @@ SQL_Data_Cleaning_Global_Tech_Layoffs/
 
 # 📌 Author
 **BRAHIM BADREDDINE**
+
+
+</details>
+
+---
+
+<details>
+<summary>🇫🇷 Version Française</summary>
+
+# 🏢 Pipeline ETL des Licenciements (SQL Server)
+
+## 📌 Aperçu du projet
+Ce projet met en place un pipeline ETL complet utilisant SQL Server pour nettoyer et transformer un dataset mondial sur les licenciements dans le secteur technologique.
+
+Le dataset contient des informations sur les licenciements d’entreprises dans plusieurs industries et pays, incluant le nombre total de licenciements, le pourcentage de licenciements, les fonds levés et le stade de croissance des entreprises.
+
+Le pipeline suit une **architecture en médaillon (Bronze → Silver → Gold)** afin de nettoyer, standardiser et structurer progressivement les données pour l’analyse et le reporting.
+
+---
+
+# 🏗️ Architecture des données
+
+![ETL Architecture](assets/medallion_architecture.svg)
+
+### 🥉 Couche Bronze (Données brutes)
+- Données importées directement depuis la source sans transformation
+- Conserve les données originales pour traçabilité et audit
+- Représente la source de vérité immuable
+
+---
+
+### 🥈 Couche Silver (Données nettoyées)
+- Suppression des doublons
+- Standardisation des valeurs catégorielles incohérentes
+- Conversion des dates au format SQL `DATE`
+- Traitement des valeurs manquantes selon des règles métier
+- Conservation des valeurs NULL importantes pour l’analyse
+
+---
+
+### 🥇 Couche Gold (Données prêtes pour l’analyse)
+- Dataset final nettoyé et fiable
+- Optimisé pour l’analyse exploratoire et le reporting
+- Prêt pour les tableaux de bord et outils BI
+
+---
+
+# 🛠️ Technologies utilisées
+- SQL Server
+- T-SQL
+- Conception de pipeline ETL
+- Nettoyage des données
+- Architecture en médaillon
+
+---
+
+# 🧹 Transformations principales
+
+## 1. Suppression des doublons
+Suppression des doublons à l’aide de `ROW_NUMBER()` basé sur :
+
+- Entreprise
+- Localisation
+- Industrie
+- Total des licenciements
+- Date
+- Pourcentage de licenciements
+- Stade
+- Pays
+- Fonds levés
+
+---
+
+## 2. Standardisation des données
+Uniformisation des valeurs incohérentes telles que :
+
+- `Crypto Currency`, `Crypto/Web3` → `Crypto`
+- `United States.` → `United States`
+
+---
+
+## 3. Formatage des dates
+Conversion de la colonne `date` au format SQL Server `DATE` pour permettre :
+
+- Le filtrage
+- Les agrégations
+- L’analyse temporelle
+
+---
+
+## 4. Gestion des valeurs manquantes
+
+Les valeurs manquantes de la colonne `industry` sont complétées à partir des autres enregistrements de la même entreprise.
+
+Le processus utilise une jointure sur la colonne `company` pour identifier les cas où :
+
+- Un enregistrement a `industry = NULL`
+- Un autre enregistrement de la même entreprise contient une valeur valide
+
+La valeur valide est ensuite utilisée pour compléter les données manquantes.
+
+### Exemple
+
+| Entreprise | Industrie |
+|---|---|
+| Airbnb | NULL |
+| Airbnb | Voyage |
+
+Résultat :
+
+| Entreprise | Industrie |
+|---|---|
+| Airbnb | Voyage |
+
+---
+
+## 5. Conservation des valeurs NULL
+Les valeurs NULL sont conservées dans :
+
+- `total_laid_off`
+- `percentage_laid_off`
+- `funds_raised_millions`
+
+afin de préserver la fidélité des données et éviter des suppositions incorrectes.
+
+---
+
+# 📊 Résultat final
+La couche Gold fournit un dataset propre et structuré prêt pour :
+
+- Analyse des tendances de licenciement
+- Analyse par industrie
+- Reporting par pays
+- Tableaux de bord exécutifs
+- Outils BI (Power BI / Tableau)
+
+---
+
+# 🚀 Résultat du projet
+Ce projet démontre des compétences pratiques en SQL dans :
+
+- Nettoyage et transformation des données
+- Développement de pipeline ETL
+- Conception d’architecture en couches
+- Gestion de données réelles et imparfaites
+- Création de datasets prêts pour l’analyse
+
+---
+
+# 📂 Structure du projet
+
+```bash
+SQL_Data_Cleaning_Global_Tech_Layoffs/
+│
+├── data/
+│   ├── Global_Tech_Layoffs_Data_for_Data_Cleaning.csv
+│   └── Global_Tech_Layoffs_Clean_Data.csv
+│
+├── scripts/
+│   └── SQL_Data_Cleaning_Global_Tech_Layoffs.sql
+│
+└── README.md
+
+</details>
