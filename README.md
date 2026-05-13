@@ -148,9 +148,7 @@ SQL_Data_Cleaning_Global_Tech_Layoffs/
 │   └── Global_Tech_Layoffs_Clean_Data.csv
 │
 ├── scripts/
-│   ├── bronze_layer.sql
-│   ├── silver_layer.sql
-│   └── gold_layer.sql
+│   ├── SQL_Data_Cleaning_Global_Tech_Layoffs.sql
 │
 ├── assets/
 │   └── medallion_architecture.svg
