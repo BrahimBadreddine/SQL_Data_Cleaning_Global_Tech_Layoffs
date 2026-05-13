@@ -324,10 +324,10 @@ SQL_Data_Cleaning_Global_Tech_Layoffs/
 │   └── SQL_Data_Cleaning_Global_Tech_Layoffs.sql
 │
 └── README.md
-
+```
 </details>
 
 ---
 
-# 📌 Author
+## 📌 Author
 **BRAHIM BADREDDINE**
