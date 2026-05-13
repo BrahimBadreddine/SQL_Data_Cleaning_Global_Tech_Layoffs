@@ -143,19 +143,17 @@ This project demonstrates practical SQL skills in:
 ```bash
 SQL_Data_Cleaning_Global_Tech_Layoffs/
 │
-├── datasets/
-│   └── Global_Tech_Layoffs_Data_for_Data_Cleaning.csv
+├── data/
+│   ├── Global_Tech_Layoffs_Data_for_Data_Cleaning.csv
 │   └── Global_Tech_Layoffs_Clean_Data.csv
 │
 ├── scripts/
-│   ├── SQL_Data_Cleaning_Global_Tech_Layoffs.sql
+│   └── SQL_Data_Cleaning_Global_Tech_Layoffs.sql
 │
+└── README.md
+```
 
 ---
 
-## 📌 Author
+# 📌 Author
 **BRAHIM BADREDDINE**
-├── assets/
-│   └── medallion_architecture.svg
-│
-└── README.md
