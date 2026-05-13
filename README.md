@@ -80,14 +80,28 @@ Converted the `date` column into SQL Server `DATE` datatype to support:
 ---
 
 ## 4. Missing Value Handling
-Filled missing `industry` values using existing company-level records through self-joins.
+
+Missing `industry` values were populated using existing records from the same company.
+
+The process uses a self-join on the `company` column to locate rows where:
+
+- One record has a NULL `industry`
+- Another record for the same company contains a valid `industry`
+
+The valid industry value is then used to update the missing entry.
 
 ### Example
 
 | Company | Industry |
 |---|---|
-| Bally's | NULL |
-| Bally's | Gaming |
+| Airbnb | NULL |
+| Airbnb | Travel |
+
+Result:
+
+| Company | Industry |
+|---|---|
+| Airbnb | Travel |
 
 ---
 
