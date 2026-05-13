@@ -1,4 +1,4 @@
-# SQL Data Cleaning Project
+# Global Tech Layoffs Cleaning Project
 
 🌐 Language / Langue  
 - English  
