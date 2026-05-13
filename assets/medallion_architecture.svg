@@ -1,0 +1,31 @@
+<svg width="900" height="300" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="#f7f9fc"/>
+
+  <!-- Bronze -->
+  <rect x="50" y="80" width="220" height="140" rx="15" fill="#cd7f32"/>
+  <text x="160" y="120" font-size="20" text-anchor="middle" fill="white" font-family="Arial">Bronze Layer</text>
+  <text x="160" y="150" font-size="14" text-anchor="middle" fill="white" font-family="Arial">Raw Data</text>
+  <text x="160" y="175" font-size="12" text-anchor="middle" fill="white" font-family="Arial">Unprocessed</text>
+
+  <!-- Silver -->
+  <rect x="340" y="80" width="220" height="140" rx="15" fill="#c0c0c0"/>
+  <text x="450" y="120" font-size="20" text-anchor="middle" fill="black" font-family="Arial">Silver Layer</text>
+  <text x="450" y="150" font-size="14" text-anchor="middle" fill="black" font-family="Arial">Cleaned Data</text>
+  <text x="450" y="175" font-size="12" text-anchor="middle" fill="black" font-family="Arial">Standardized</text>
+
+  <!-- Gold -->
+  <rect x="630" y="80" width="220" height="140" rx="15" fill="#d4af37"/>
+  <text x="740" y="120" font-size="20" text-anchor="middle" fill="white" font-family="Arial">Gold Layer</text>
+  <text x="740" y="150" font-size="14" text-anchor="middle" fill="white" font-family="Arial">Analytics Ready</text>
+  <text x="740" y="175" font-size="12" text-anchor="middle" fill="white" font-family="Arial">BI / Reporting</text>
+
+  <!-- Arrows -->
+  <line x1="270" y1="150" x2="340" y2="150" stroke="#555" stroke-width="3"/>
+  <polygon points="340,150 330,145 330,155" fill="#555"/>
+
+  <line x1="560" y1="150" x2="630" y2="150" stroke="#555" stroke-width="3"/>
+  <polygon points="630,150 620,145 620,155" fill="#555"/>
+
+</svg>
