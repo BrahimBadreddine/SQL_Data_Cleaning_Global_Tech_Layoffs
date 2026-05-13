@@ -169,7 +169,7 @@ SQL_Data_Cleaning_Global_Tech_Layoffs/
 ---
 
 <details>
-<summary>🇫🇷 Version Française</summary>
+<summary>🇫🇷 version en français</summary>
 
 # 🏢 Pipeline ETL des Licenciements (SQL Server)
 
