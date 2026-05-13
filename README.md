@@ -141,10 +141,11 @@ This project demonstrates practical SQL skills in:
 # 📂 Project Structure
 
 ```bash
-Layoffs-ETL-Pipeline/
+SQL_Data_Cleaning_Global_Tech_Layoffs/
 │
 ├── datasets/
-│   └── layoffs.csv
+│   └── Global_Tech_Layoffs_Data_for_Data_Cleaning.csv
+│   └── Global_Tech_Layoffs_Clean_Data.csv
 │
 ├── scripts/
 │   ├── bronze_layer.sql
