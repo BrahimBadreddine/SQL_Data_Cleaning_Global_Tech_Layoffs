@@ -150,6 +150,11 @@ SQL_Data_Cleaning_Global_Tech_Layoffs/
 ├── scripts/
 │   ├── SQL_Data_Cleaning_Global_Tech_Layoffs.sql
 │
+
+---
+
+## 📌 Author
+**BRAHIM BADREDDINE**
 ├── assets/
 │   └── medallion_architecture.svg
 │
