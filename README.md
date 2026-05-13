@@ -27,7 +27,7 @@ The pipeline follows a **Medallion Architecture (Bronze → Silver → Gold)** t
 ### 🥉 Bronze Layer (Raw Data)
 - Raw source data ingested without modification
 - Preserves original records for traceability and auditing
-- Serves as the immutable source of truth
+- Serves as the single source of truth
 
 ---
 
@@ -195,7 +195,7 @@ Le pipeline suit une **architecture en médaillon (Bronze → Silver → Gold)**
 ### 🥉 Couche Bronze (Données brutes)
 - Données importées directement depuis la source sans transformation
 - Conserve les données originales pour traçabilité et audit
-- Représente la source de vérité immuable
+- Sert de source de vérité unique"
 
 ---
 
