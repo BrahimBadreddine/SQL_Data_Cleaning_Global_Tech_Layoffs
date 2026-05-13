@@ -1,4 +1,4 @@
-# Global Tech Layoffs Data Cleaning Project
+# 🏢 Global Tech Layoffs Data Cleaning Project
 
 🌐 Language / Langue  
 - English  
@@ -164,12 +164,6 @@ SQL_Data_Cleaning_Global_Tech_Layoffs/
 └── README.md
 ```
 
----
-
-# 📌 Author
-**BRAHIM BADREDDINE**
-
-
 </details>
 
 ---
@@ -332,3 +326,8 @@ SQL_Data_Cleaning_Global_Tech_Layoffs/
 └── README.md
 
 </details>
+
+---
+
+# 📌 Author
+**BRAHIM BADREDDINE**
